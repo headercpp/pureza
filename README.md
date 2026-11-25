@@ -1,34 +1,32 @@
 # Pureza
 
-Desinstalador profundo para Windows, com estética minimalista inspirada no macOS.
-
-Remove programas, caça rastros no registro, limpa resíduos, monitora inicialização, mede disco, cria pontos de restauração, tritura arquivos — tudo em um app único, com animações suaves e tema escuro.
+Desinstalador para Windows com cara de app de macOS.
 
 ![Pureza](build/icon.png)
 
-## Download
+## Baixar
 
-Baixe o instalador mais recente em [Releases](../../releases/latest).
+Vai em [Releases](../../releases/latest) e pega o `Pureza-0.1.0-setup.exe`.
 
-Instalação em um clique: ao executar o `.exe`, Pureza se instala automaticamente no perfil do usuário, cria atalhos na área de trabalho e no Menu Iniciar e abre o app. Sem senha de administrador, sem telas de wizard.
+Instala com um clique, sem wizard, sem senha de admin. Cria atalho na área de trabalho e no Menu Iniciar.
 
-## O que ele faz
+## O que tem dentro
 
-- **Desinstalador profundo** com lista unificada de programas Win32 e UWP, scan de resíduos (registro, pastas, serviços, tarefas), ícones nativos
-- **Visão geral** com stats em tempo real (CPU, RAM, disco, bateria, uptime, rede)
-- **Limpeza inteligente** — cache, temp, logs, recentes, lixeira com medição real
-- **Análise de disco** — gráfico das pastas mais pesadas
-- **Inicialização** com medida de impacto real (RAM + status em execução)
-- **Pontos de restauração** — criar, listar e excluir
-- **Shredder** — destruir arquivos com múltiplas passagens
-- **Doutor** — diagnóstico do PC com recomendações
-- **Agendar limpeza** via Agendador de Tarefas do Windows
-- **Catálogo winget** embutido para instalar apps
-- **Conversor rápido** de imagens
-- **Histórico** de todas as ações
-- **Clima + geolocalização** por IP na topbar
+- Lista de programas Win32 e UWP com busca, ordenação e ícones
+- Scan de resíduos (registro, pastas, serviços, tarefas) na hora de desinstalar
+- Limpeza de temp, cache, logs, lixeira
+- Análise de disco em gráfico
+- Inicialização do Windows com impacto real
+- Pontos de restauração
+- Shredder de arquivos
+- Doutor com diagnóstico e recomendações
+- Agendamento de limpezas
+- Catálogo winget pra instalar coisas novas
+- Conversor de imagens
+- Histórico de tudo que você fez
+- Clima e cidade na barra de cima
 
-## Desenvolvimento
+## Rodar em dev
 
 ```powershell
 npm install
@@ -47,12 +45,12 @@ Build do instalador:
 npm run build
 ```
 
-O artefato sai em `release\Pureza-0.1.0-setup.exe`.
+Sai em `release\Pureza-0.1.0-setup.exe`.
 
 ## Stack
 
-Electron 30 · React 18 · TypeScript · Vite · Framer Motion · PowerShell para as operações nativas · electron-builder NSIS one-click.
+Electron, React, TypeScript, Vite, Framer Motion. PowerShell nas operações do sistema.
 
 ## Licença
 
-MIT © EduX
+MIT
